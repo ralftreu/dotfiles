@@ -19,6 +19,7 @@
         "cpu",
         "memory",
         "temperature",
+        "custom/power",
         "custom/notification",
         "tray"
     ],
@@ -102,10 +103,12 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "alacritty -e btop"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click": "alacritty -e btop"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -164,6 +167,14 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format": "{icon} {}",
+        "format-icons": {
+            "default": "⏻"
+        },
+        "escape": true,
+        "on-click": "wlogout" 
     },
     "custom/media": {
         "format": "{icon} {}",
