@@ -1,6 +1,7 @@
 * {
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    font-weight: 600;
 }
 
 #waybar {
@@ -21,11 +22,11 @@ button {
 }
 
 #workspaces button:hover {
-    background: rgba(0,0,0,0.2);
+    background-color: #888888;
 }
 
 #workspaces button.focused {
-    background-color: #222222;
+    background-color: #555555;
 }
 
 #workspaces button.urgent {
@@ -33,7 +34,7 @@ button {
 }
 
 #workspaces button.active {
-    background-color: #222222;
+    background-color: #555555;
 }
 
 #clock,

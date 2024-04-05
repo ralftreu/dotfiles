@@ -247,6 +247,7 @@ workspace 1
 exec firefox
 
 exec redshift -l 53.237280:7.461090
+exec /usr/lib/polkit-1/polkit-agent-helper-1
 exec /usr/libexec/nobara-automount
 
 # Notification daemon
